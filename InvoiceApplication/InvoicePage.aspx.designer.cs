@@ -51,13 +51,13 @@ namespace InvoiceApplication
         protected global::System.Web.UI.WebControls.TextBox DispatchText;
 
         /// <summary>
-        /// InvDateTxt control.
+        /// InvDateText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox InvDateTxt;
+        protected global::System.Web.UI.WebControls.TextBox InvDateText;
 
         /// <summary>
         /// InvDateImg control.
@@ -96,13 +96,13 @@ namespace InvoiceApplication
         protected global::System.Web.UI.WebControls.TextBox VechNumText;
 
         /// <summary>
-        /// InvTypeText control.
+        /// InvTypeTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox InvTypeText;
+        protected global::System.Web.UI.WebControls.TextBox InvTypeTxt;
 
         /// <summary>
         /// ConfNumText control.
@@ -699,13 +699,13 @@ namespace InvoiceApplication
         protected global::System.Web.UI.WebControls.Label TotalLabel;
 
         /// <summary>
-        /// TotalText control.
+        /// TotalAmntText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TotalText;
+        protected global::System.Web.UI.WebControls.TextBox TotalAmntText;
 
         /// <summary>
         /// AmountInWordLabel control.

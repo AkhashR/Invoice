@@ -46,7 +46,7 @@
                         <b>INVOICE DATE :</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="InvDateTxt" runat="server" Width="140px"></asp:TextBox>
+                        <asp:TextBox ID="InvDateText" runat="server" Width="140px"></asp:TextBox>
                         <asp:ImageButton ID="InvDateImg" runat="server" ImageUrl="~/Calendar-PNG-File.png" ImageAlign="AbsBottom" Height="23px" Width="22px" OnClick="InvDateImg_Click" />
                         <asp:Calendar ID="InvDateCal" runat="server" OnSelectionChanged="InvDateCal_SelectionChanged" OnDayRender="InvDateCal_DayRender" BackColor="Silver"></asp:Calendar>
                     </td>
@@ -68,8 +68,9 @@
                         <b>INVOICE TYPE :</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="InvTypeText" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="InvTypeTxt" runat="server"></asp:TextBox>
                     </td>
+
                     <td>
                         <b>CONF NO. :</b>
                     </td>
@@ -79,7 +80,7 @@
 
                     <%--///BUTTON--%>
                     <td>
-                        <asp:Button ID="InsertButton" runat="server" Text="Insert" />
+                        <asp:Button ID="InsertButton" runat="server" Text="Insert" OnClick="InsertButton_Click" />
 
                         <asp:Button ID="SelectButton" runat="server" Text="Select" />
 
@@ -373,7 +374,7 @@
                         <asp:Label ID="TotalLabel" runat="server" Visible="True" Text="Total: "></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TotalText" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TotalAmntText" runat="server"></asp:TextBox>
                     </td>
                 </tr>
             </table>
@@ -485,14 +486,6 @@
             <hr style="width: 100%; text-align: left; margin-left: 0" />
             <table>
                 <asp:GridView ID="InvoiceGrid" runat="server">
-                    <Columns>
-                        <asp:BoundField DataField="InvoiceNumber" HeaderText="Invoice Num" />
-                        <asp:BoundField DataField="InvoiceDate" HeaderText="Invoice Date" />
-                        <asp:BoundField DataField="InvoiceType" HeaderText="Invoice Type" />
-                        <asp:BoundField DataField="ConfoNumber" HeaderText="Confo Num" />
-                        <asp:BoundField DataField="VehicleNumber" HeaderText="Vehicle Num" />
-                        <asp:BoundField DataField="TotalAmount" HeaderText="Total Amount" />
-                    </Columns>
                 </asp:GridView>
             </table>
         </div>
